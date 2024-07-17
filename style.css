@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'Sans-serif';
+    box-sizing: border-box;
+}
+
+
+
+.top {
+   
+    min-height: 60vh;
+    background-image: url('https://cdn.wallpapersafari.com/93/68/e3py1P.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.top .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.text .image {
+    
+    color: black;
+}
+
+.rtext {
+    display: flex;
+    
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.rtext p {
+    font-size: 1rem;
+}
+
+.icon i {
+    font-size: 2rem;
+    margin: 0 0.5rem;            
+    cursor: pointer;
+    
+}
+
+.icon i:hover {
+    color: #ffcc00;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;        
+}
+
+.b1, .b2, .b3 {
+    flex: 1;
+    min-height: inherit;
+    
+    background-position: center;
+    padding: 2rem;
+    color: white;
+}
+
+.b1 {
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Free-Photos-HD-Nature-Pictures.jpg);
+}
+
+.b1 h1, .b2 h1 {
+    text-align: center;
+    padding: 1rem 0;
+    
+    
+}
+
+
+
+.b2 {
+   
+    background-image: url(https://wallpapercave.com/wp/Rc9RFkt.jpg);
+}
+
+
+
+.b2 .down:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.b3 {
+    background-image: url('https://i.pinimg.com/originals/08/d9/3d/08d93df316cb19390ddb1e575eab05ec.jpg');
+}
+
+.b3 .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.b3 .overlay p {
+    margin: 0.5rem 0;
+}
+
+.b3 .overlay a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.b3 .overlay a:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 1000px) {
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .icon i {
+        font-size: 1.5rem;
+    }
+    .rtext p {
+        font-size: 1rem;
+    }
+    .b1 h1, .b2 h1 {
+        font-size: 1.5rem;
+    }
+    .b1 p, .b2 p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .top .overlay {
+        padding: 1rem;
+    }
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text .image {
+        height: 200px;
+        width: 140px;
+    }
+    .rtext {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rtext p {
+        margin-top: 10px;
+    }
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .b1, .b2, .b3 {
+        width: 100%;
+        min-height: 30vh;
+    }
+}
